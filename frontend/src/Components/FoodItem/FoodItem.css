@@ -1,0 +1,134 @@
+.food-item{
+    background-color: #fff;
+    margin-bottom: 3.5rem;
+    padding-bottom: 10px;
+    width: 600px;
+    height: 712px;
+    border: 2px solid #092B40;
+    font-size: small;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.avatar{
+    padding: 5px;
+}
+
+.avatar img{
+    border-radius: 52%;
+    height: 50px;
+    width: 20px;
+    width: 9%;
+    object-fit:cover;
+}
+
+.username{
+      float: right;
+      margin-top: 17px;
+      margin-right: 30px;
+}
+
+.food-item-image img{
+    width: 596px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.fa-search-location{
+    font-size: 20px;
+}
+
+.fa-heart{
+    font-size: 20px;
+}
+
+.fa-heart:hover{
+    cursor: pointer;
+}
+
+.fa-heart.liked{
+    color: red;
+}
+
+.fa-share{
+    font-size: 20px;
+}
+
+.fa-share:hover{
+    cursor: pointer;
+}
+
+.fa-search-location:hover{
+    cursor: pointer;
+}
+
+.food-item-actions{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 30px 20px;
+    /*
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-top: 20px; */
+}
+
+.food-item-info{
+    line-height: 1.7;
+    margin-left: 10px;
+}
+
+
+.place-item__modal-content {
+    padding: 0;
+  }
+  
+  .place-item__modal-actions {
+    text-align: right;
+  }
+
+  .map-container{
+    height: 15rem;
+    width: 100%;
+ }
+
+
+
+
+ @media screen and (max-width: 768px){
+    .food-item{
+        width: 404px;
+        height: 500px;
+    }
+
+    .food-item-image img{
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .avatar img{
+        height: 30px;
+    }
+
+    .avatar:hover{
+        cursor:pointer;
+    }
+ }
+
+ @media screen and (max-width: 500px){
+    .food-item{
+        width: 384px;
+        height: 490px;
+    }
+
+    .food-item-image img{
+        width: 380px;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+}

@@ -1,0 +1,148 @@
+
+.navigation{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #092B40;
+}
+
+.navigation a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+
+}
+
+
+.navigation a.middle{
+    position: relative;
+}
+
+.navigation a.middle:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation a.middle:hover:before{
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+/*.navigation a:hover{
+    border-radius: 4px;
+    background-color: rgb(201, 196, 196) ;
+    transition: all 0.2s ease-out;
+}*/
+
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+
+}
+
+.fa-bars{
+    color: #fff;
+    font-size: medium;
+}
+
+.fa-bar:hover{
+    cursor: pointer;
+}
+
+.fa-times:hover{
+    cursor: pointer;
+}
+
+.fa-times{
+    color: #fff;
+    font-size: medium;
+
+}
+
+.menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .navigation{
+        position: relative;
+        opacity: 1;
+    }
+
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        height: 369px;
+        width: 50%;
+        position: absolute;
+        left: -100%;
+        top: 70px;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active{
+        background: #092B40;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+
+    }
+
+    .navigation a.middle:after:hover{
+        cursor: pointer;
+    }
+
+    .menu-icon{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        margin-top: 15px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .name{
+        display: none;
+    }
+    
+    .navigation a.middle:before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #274669;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+    }
+    
+}
